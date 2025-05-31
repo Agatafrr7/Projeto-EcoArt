@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra - EcoArt</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1><i class="fas fa-leaf"></i> EcoArt</h1>
+        </div>
+    </header>
+
+    <main class="container-finalizacao">
+        <h1><i class="fas fa-shopping-bag"></i> Finalize sua Compra</h1>
+        
+        <div class="grid-finalizacao">
+            <!-- Seção de Dados do Cliente -->
+            <section class="dados-cliente">
+                <h2><i class="fas fa-user"></i> Seus Dados</h2>
+                <form id="form-cliente">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo*</label>
+                        <input type="text" id="nome" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="whatsapp">WhatsApp*</label>
+                        <input type="tel" id="whatsapp" placeholder="(DDD) 9XXXX-XXXX" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="endereco">Endereço Completo (para entrega)</label>
+                        <input type="text" id="endereco">
+                    </div>
+                </form>
+            </section>
+
+            <!-- Seção de Resumo do Pedido -->
+            <section class="resumo-pedido">
+                <h2><i class="fas fa-receipt"></i> Resumo do Pedido</h2>
+                <div id="resumo-carrinho" class="itens-pedido">
+                    <!-- Itens serão inseridos pelo JavaScript -->
+                </div>
+                
+                <div class="metodo-entrega" id="metodo-entrega">
+                    <!-- Método de entrega será inserido aqui -->
+                </div>
+                
+                <div class="metodo-pagamento" id="metodo-pagamento">
+                    <!-- Método de pagamento será inserido aqui -->
+                </div>
+                
+                <div class="total-final">
+                    <h3>Total do Pedido:</h3>
+                    <span id="total-pedido">R$ 0,00</span>
+                </div>
+                
+                <button type="submit" form="form-cliente" class="btn-confirmar">
+                    <i class="fas fa-check-circle"></i> Confirmar Pedido
+                </button>
+            </section>
+        </div>
+    </main>
+
+    <!-- Loading -->
+    <div id="loading-finalizacao" class="loading" style="display: none;">
+        <div class="spinner"></div>
+        <p>Processando seu pedido...</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="finalizar-compra.js"></script>
+</body>
+</html>
+

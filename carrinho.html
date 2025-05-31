@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - EcoArt</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho (igual ao index.html) -->
+    <header class="header">
+        <div class="logo">
+            <h1><i class="fas fa-leaf"></i>EcoArt</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="index.html#produtos"><i class="fas fa-shopping-bag"></i> Produtos</a></li>
+                <li><a class="active" href="carrinho.html"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo do Carrinho -->
+    <main class="carrinho-container">
+        <h2><i class="fas fa-shopping-cart"></i> Seu Carrinho</h2>
+        
+        <div class="itens-carrinho" id="itens-carrinho">
+       <!-- Itens serão inseridos via JavaScript -->
+            <p class="carrinho-vazio" id="carrinho-vazio">Seu carrinho está vazio.</p>
+        </div>
+
+        <div class="opcoes-entrega">
+    <h3>Opções de Entrega</h3>
+    <div class="frete-options">
+        <label>
+            <input type="radio" name="frete" value="retirada" checked> 
+            Retirada em Loja (Grátis)
+        </label>
+        <label>
+            <input type="radio" name="frete" value="sedex"> 
+            Sedex (R$ 15,00)
+        </label>
+        <label>
+            <input type="radio" name="frete" value="pac"> 
+            PAC (R$ 10,00)
+        </label>
+    </div>
+</div>
+
+<div class="opcoes-pagamento">
+    <h3>Formas de Pagamento</h3>
+    <select id="metodo-pagamento">
+        <option value="pix">PIX (5% de desconto)</option>
+        <option value="cartao">Cartão de Crédito</option>
+    </select>
+    </div>
+
+     <div class="resumo-carrinho">
+            <h3>Resumo do Pedido</h3>
+            <div class="total">
+                <span>Total:</span>
+                <span id="total-carrinho">R$ 0,00</span>
+            </div>
+           <a href="finalizar-compra.html" class="btn-finalizar-link">
+                <button class="btn-finalizar">Finalizar Compra</button>
+            </a>
+    </div>
+    </main>
+
+<script src="carrinho.js"></script>
+
+</script>
+</body>
+</html>

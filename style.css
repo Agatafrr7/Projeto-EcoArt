@@ -92,7 +92,7 @@ a {
 /* Banner */
 .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('../images/banner.jpg') center/cover;
+                url('../images/banner.jpg');
     height: 400px;
     display: flex;
     align-items: center;

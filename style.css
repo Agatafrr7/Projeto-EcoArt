@@ -91,8 +91,8 @@ a {
 
 /* Banner */
 .banner {
-   <img src="images/banner.jpg" alt="Banner EcoArt">
-
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('../images/banner.jpg') center/cover;
     height: 400px;
     display: flex;
     align-items: center;

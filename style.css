@@ -91,15 +91,10 @@ a {
 
 /* Banner */
 .banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-              url('imagens/banner.jpg') center/cover;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 0 1rem;
+  background-image: url("../img/images/banner.jpg");
+  background-size: cover;
+  backgroud-position: center;
+  padding: 10rem 0;
 }
 
 .banner-content h2 {
@@ -621,3 +616,4 @@ button[type="submit"]:hover {
 .btn i {
     font-size: 1.2rem;
 }
+

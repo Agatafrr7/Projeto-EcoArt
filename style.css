@@ -90,7 +90,7 @@ a {
 }
 
 /* Banner */
-.banner {
+main.banner {
   background-image: url("../img/images/banner.jpg");
   background-size: cover;
   backgroud-position: center;
@@ -616,4 +616,5 @@ button[type="submit"]:hover {
 .btn i {
     font-size: 1.2rem;
 }
+
 
